@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(python3:*)",
+      "Bash(/dev/null)",
+      "Bash(echo:*)",
+      "Bash(sqlite3:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(printf:*)",
+      "Bash(gcc:*)",
+      "Bash(/tmp/test_cs)",
+      "mcp__ide__getDiagnostics",
+      "Bash(make:*)",
+      "Bash(git fetch:*)",
+      "Bash(git rebase:*)",
+      "Bash(git checkout:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(git restore:*)",
+      "Bash(rm:*)",
+      "Bash(claude compact)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/user_prompt_submit.py"
+          }
+        ]
+      }
+    ]
+  }
+}

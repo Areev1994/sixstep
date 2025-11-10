@@ -1,0 +1,9 @@
+{
+  "problem_id": "{problem_id}",
+  "problem_description": "Problem description",
+  "current_step": "6",
+  "current_phase": 1,
+  "started": "2025-10-31T16:15:58.341438",
+  "status": "ACTIVE",
+  "problem_dir": "~/solution_map_implementation/active/{problem_id}"
+}
